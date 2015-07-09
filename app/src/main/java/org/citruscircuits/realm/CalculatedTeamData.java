@@ -1,0 +1,47 @@
+import io.realm.RealmObject;
+
+public class CalculatedTeamData extends RealmObject {
+    private int predictedSeed;
+    private int totalScore;
+    private float averageScore;
+    private float predictedTotalScore;
+    private float predictedAverageScore;
+    private float firstPickAbility;
+    private float secondPickAbility;
+    private float thirdPickAbilityLandfill;
+    private float thirdPickAbility;
+    private float stackingAbility;
+    private float noodleReliability;
+    private float avgNumMaxHeightStacks;
+    private float reconAbility;
+    private float reconReliability;
+    private float isRobotMoveIntoAutoZonePercentage;
+    private float isStackedToteSetPercentage;
+    private float avgNumReconsMovedIntoAutoZone;
+    private float avgNumTotesStacked;
+    private float avgNumReconLevels;
+    private float avgNumNoodlesContributed;
+    private float avgNumReconsStacked;
+    private float avgNumTotesPickedUpFromGround;
+    private float avgNumLitterDropped;
+    private float avgNumStacksDamaged;
+    private float avgMaxFieldToteHeight;
+    private float avgMaxReconHeight;
+    private float avgAgility;
+    private float driverAbility;
+    private float avgStackPlacing;
+    private float avgHumanPlayerLoading;
+    private float incapacitatedPercentage;
+    private float disabledPercentage;
+    private float reliability;
+    private String reconAcquisitionTypes;
+    private String mostCommonReconAcquisitionType;
+    private float avgCoopPoints;
+    private float stepReconSuccessRateInAuto;
+    private float avgStepReconsAcquiredInAuto;
+    private float bottomPlacingSuccessRate;
+    private float avgNumHorizontalReconsPickedUp;
+    private float avgNumVerticalReconsPickedUp;
+    private float avgNumReconsPickedUp;
+    private int avgNumCappedSixStacks;
+}

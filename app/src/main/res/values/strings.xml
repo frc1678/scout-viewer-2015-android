@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Viewer</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_team_detail">Team NUMBER</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_chart">Team NUMBER</string>
+    <string name="title_activity_chart_list">Team NUMBER</string>
+    <string name="title_activity_pit_data">Team NUMBER</string>
+    <string name="playground">Playground</string>
+
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent">
+<TextView
+    android:id="@+id/teamInMatchNumText"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:textSize="14sp"
+    android:textColor="#000"/>
+
+<TextView
+    android:id="@+id/redTeamScore"
+    android:layout_width="50dp"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:textSize="14sp"
+    android:text="RSCORE"
+    android:textColor="#dd2121"
+    android:layout_alignParentRight="true"/>
+
+<TextView
+    android:id="@+id/blueTeamScore"
+    android:layout_width="50dp"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:textSize="14sp"
+    android:text="BSCORE"
+    android:textColor="#2121dd"
+    android:layout_toLeftOf="@+id/redTeamScore"/>
+</RelativeLayout>

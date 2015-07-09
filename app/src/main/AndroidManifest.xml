@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.citruscircuits.scout_viewer_2015_android" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <menu xmlns:android="http://schemas.android.com/apk/res/android" >
+                <item
+                    android:id="@+id/action_playground"
+                    android:icon="@drawable/playground"/> /
+            </menu>
+
+        </activity>
+        <activity android:name="com.dropbox.sync.android.DbxAuthActivity"/>
+        <activity
+            android:name="com.dropbox.client2.android.AuthActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <data android:scheme="db-fu1drprr1bha4zl" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.dropbox.sync.android.DbxSyncService"
+            android:enabled="true"
+            android:exported="false"
+            android:label="Dropbox Sync" />
+
+        <activity
+            android:name=".TeamDetailActivity"
+            android:label="@string/title_activity_team_detail"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".MatchDetailActivity"
+            android:label="@string/title_activity_team_detail"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".ChartActivity"
+            android:label="@string/title_activity_chart">
+        </activity>
+        <activity
+            android:name=".ChartListActivity"
+            android:label="@string/title_activity_chart_list"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".TeamDataActivity"
+            android:label="@string/title_activity_pit_data">
+        </activity>
+
+    </application>
+
+</manifest>

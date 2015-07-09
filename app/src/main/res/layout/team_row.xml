@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <TextView android:id="@+id/teamNumberText"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#000"
+        android:paddingBottom="10dp"/>
+
+    <TextView android:id="@+id/teamNameText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="#000"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:gravity="left"
+        android:layout_toRightOf="@+id/teamNumberText"/>
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/matchNum"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:textSize="22sp"
+        android:textColor="#000"/>
+
+    <TextView
+        android:id="@+id/redTeamScore"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:textSize="14sp"
+        android:text="RSCORE"
+        android:textColor="#dd2121"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/dashText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/redTeamScore"
+        android:text=" "
+        android:textSize="16sp"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/blueTeamScore"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:textSize="14sp"
+        android:text="BSCORE"
+        android:textColor="#2121dd"
+        android:layout_toLeftOf="@+id/dashText"/>
+
+    <LinearLayout
+        android:id="@+id/redLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_toLeftOf="@+id/blueTeamScore"
+        android:layout_toRightOf="@+id/matchNum"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/redTeam1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="red1"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="#ff2121"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/redTeam2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="red2"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="#ff2121"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/redTeam3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="red3"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="#ff2121"
+            android:layout_weight="1"/>
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/blueLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/redLayout"
+        android:layout_toLeftOf="@+id/blueTeamScore"
+        android:layout_toRightOf="@+id/matchNum"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/blueTeam1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="blue1"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="#2121ff"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/blueTeam2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="blue2"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textColor="#2121ff"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/blueTeam3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="blue3"
+            android:gravity="center"
+            android:textColor="#2121ff"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</RelativeLayout>
