@@ -32,8 +32,8 @@ public class TeamDetailActivity extends ActionBarActivity {
     public Team team;
     public DbxFileSystem dbxFs;
     public DbxAccountManager mDbxAcctMgr;
-    private String appKey = "fu1drprr1bha4zl";
-    private String appSecret = "x8f4ehb2qyk30r4";
+    private String appKey = "APP KEY";
+    private String appSecret = "APP SECRET";
 
 
     ChartClickListener chartClickListener = new ChartClickListener();
